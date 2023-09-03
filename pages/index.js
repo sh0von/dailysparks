@@ -14,7 +14,7 @@ function HomePage({ dailyIdea }) {
               <h1 className="display-4 text-primary">Daily Spark</h1>
             </div>
             <div className="text-center mt-4">
-              <h2 className="mb-3">{dailyIdea.title}</h2>
+              <h2 className="mb-3 text-black">{dailyIdea.title}</h2>
               <p className="mt-3 text-muted">
                 Estimated Reading Time: {dailyIdea.readingTime} minute{dailyIdea.readingTime !== 1 && 's'}
               </p>
