@@ -1,9 +1,32 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+/* Add this CSS to justify the text */
+.justified-text {
+  text-align: justify;
+}.first-letter-big::first-letter {
+  font-size: 2.5em; /* Adjust the font size as needed */
+}
+
+/* Optional: If you want to remove the first letter from the rest of the text */
+.first-letter-big::after {
+  content: attr(data-first-letter); /* Insert the first letter using the 'content' property */
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* Apply Poppins as the default font for the entire application */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Media query for small screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .justified-text {
+    text-align: justify; /* Left-align text on small screens */
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
