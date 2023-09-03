@@ -19,7 +19,7 @@ function HomePage({ dailyIdea }) {
                 Estimated Reading Time: {dailyIdea.readingTime} minute{dailyIdea.readingTime !== 1 && 's'}
               </p>
               <p
-                className="justified-text first-letter-big"
+                className="justified-text first-letter-big text-black"
                 dangerouslySetInnerHTML={{ __html: descriptionWithLineBreaks }}
               />
             </div>
