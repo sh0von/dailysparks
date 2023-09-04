@@ -31,7 +31,6 @@ function HomePage({ dailyIdea }) {
           <div className="col-lg-8">
             <div className="text-center">
               <h3 className="text-primary">Subscribe to Our Newsletter</h3>
-              <p className="text-muted">Stay updated with our latest ideas.</p>
               <div className="input-group mb-3">
                 <input
                   type="email"
@@ -51,7 +50,7 @@ function HomePage({ dailyIdea }) {
         </div>
       </div>
       <footer className="mt-auto p-3 text-center text-black">
-        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Crywolf. All rights reserved.</p>
       </footer>
     </div>
   );
